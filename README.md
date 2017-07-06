@@ -17,7 +17,7 @@ chmod 755 ansible/inventory/aws/ec2.py
 Build the aqec2 OCI image.
 
 ```
-docker build -t aqec2 -f roles/jason-callaway.aqec2/files/Dockerfile .
+docker build -t aqec2 -f ansible/roles/jason-callaway.aqec2/files/Dockerfile .
 ```
 
 Copy your access key to this repo's directory. Be sure to name it ```aqec2.pem```, which is already in ```.gitignore```, or add your key name to ```.gitignore```. Also copy your relevant AWS config and credentials files. Same deal with them, if you use the standard names, they're already in ```.gitignore```.
