@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: false
+  become: false
+  roles:
+    - { role: 'jason-callaway.aqec2', r53_zone: 'rhtps.io' }
